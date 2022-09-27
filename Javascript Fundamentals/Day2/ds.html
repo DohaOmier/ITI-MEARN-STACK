@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<bod>
+    <h1>Heading</h1>
+    <hr>
+    
+    <div id="container">
+
+    </div>
+    <script>
+        
+        
+        function displayHeading(){
+            let userValue = prompt("Hello, Please enter any word you want to display!!")
+           let container = document.getElementById("container")
+            for(let counter = 1; counter <= 6; counter++){
+                
+                container.innerHTML += `
+                    <h${counter}>${userValue}</h${counter}>
+                `
+            }
+        }
+        displayHeading();
+    </script>
+</body>
+</html>
